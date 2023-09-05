@@ -1,7 +1,5 @@
 # BucketList App
 
-![BucketList App](https://example.com/bucketlist-app.png)
-
 ## Overview
 
 The BucketList App is a mobile application built with Expo and React Native that helps users create and manage their bucket lists. This initial version of the app allows users to add new items to their bucket list and delete them as needed.
@@ -13,10 +11,6 @@ The BucketList App is a mobile application built with Expo and React Native that
 - **Delete Items**: Remove items from your bucket list when they are no longer relevant or needed.
 
 - **Coming Soon**: Stay tuned for more exciting features that will enhance your bucket list experience.
-
-## Installation
-
-To run the BucketList App on your local machine or device, follow these steps:
 
 # Usage
 
