@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "taskmaster",
-    "slug": "taskmaster",
+    "name": "bucketlist",
+    "slug": "bucketlist",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kay_kindness.bucketlist"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e84618e7-7181-4f59-8e94-b8444dda0db6"
+      }
     }
   }
 }
