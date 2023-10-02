@@ -1,19 +1,28 @@
-import { View, Text, StyleSheet, Pressable, ScrollView } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Pressable,
+  ScrollView,
+  SafeAreaView,
+} from "react-native";
 export default function Bucket({ array, handlePress }) {
   return (
-    <View style={style.bucket}>
-      {array.map((item) => {
-        return (
-          <BucketItem
-            key={item.id}
-            text={item.text}
-            handlePress={() => {
-              handlePress(item.id);
-            }}
-          />
-        );
-      })}
-    </View>
+    <ScrollView style={style.scrollView}>
+      <View style={style.bucket}>
+        {array.map((item) => {
+          return (
+            <BucketItem
+              key={item.id}
+              text={item.text}
+              handlePress={() => {
+                handlePress(item.id);
+              }}
+            />
+          );
+        })}
+      </View>
+    </ScrollView>
   );
 }
 
@@ -29,7 +38,6 @@ export function BucketItem({ text, handlePress }) {
 
 const style = StyleSheet.create({
   bucket: {
-    height: 300,
     width: "100%",
     padding: 10,
     gap: 10,
@@ -43,7 +51,13 @@ const style = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "#fff",
     padding: 5,
-    width: "40%",
+    minWidth: "40%",
+    width: "auto",
     borderRadius: 20,
+  },
+
+  scrollView: {
+    width: "100%",
+    maxHeight: 300,
   },
 });

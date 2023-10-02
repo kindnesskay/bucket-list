@@ -18,9 +18,10 @@ export default function Button({ text, onPress }) {
 const styles = StyleSheet.create({
   input: {
     padding: 10,
-    height: 40,
+    height: 50,
+    justifyContent: "center",
     backgroundColor: "#f00",
-    width: 250,
+    width: "100%",
     borderRadius: 20,
   },
 });

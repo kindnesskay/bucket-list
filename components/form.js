@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 import { useState } from "react";
 import { StyleSheet, View, TextInput } from "react-native";
@@ -27,13 +26,15 @@ export default function Form({ onClickAdd }) {
 }
 const styles = StyleSheet.create({
   form: {
-    gap: 10,
+    gap: 15,
+    width: "100%",
+    padding: 10,
   },
   input: {
     padding: 10,
-    height: 40,
+    height: 50,
     backgroundColor: "#fff",
-    width: 250,
+    width: "100%",
     borderRadius: 20,
     fontSize: 18,
   },
